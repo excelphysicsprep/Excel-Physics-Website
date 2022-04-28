@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatbile" content="IE=edge">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title>Excel Prep</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <nav>
+        <img src="images/physics.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a class= "active" href="about.html">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+
+    <section id="about-home">
+        <h2>About Excel Physics</h2>
+    </section>
+
+    <section id="about-container">
+        <div class="about-img">
+            <img src="images/a.png" alt="">
+        </div>
+
+        <div class="about-text">
+            <h2>Welcome to Excel Physics! Enhance your conceptual understanding of physics with the best!</h2>
+            <p>Hello everyone, welcome to Excel Prep! We are a tutoring service founded by 3 high school juniors looking to help students learn physics in a clear and simple way. Physics is commonly viewed as one of the most difficult courses offered in high school, but with a streamlined approach focused on conceptual understanding, we believe that we can prepare students for this course. Unlike professional tutors/tutoring companies, our company is up-to-date and experienced with AP curriculum concepts taught in schools, having taken physics this year. The concepts we focus on parallel emphasized concepts at school.
+            </p>
+            <div class="about-fe">
+                <img src="images/fe1.png" alt="">
+                <div class="fe-text">
+                    <h5>Tutees</h5>
+                    <a class="black" href="https://docs.google.com/document/d/1vYLSYDJq8pBzvTWB2VC7hXhFKgR2hv-DSYNXyM_w5LE/edit?usp=sharing">If you are interested in becoming a student, please click this link for more information.</a>
+                </div>
+            </div>
+            <div class="about-fe">
+                <img src="images/fe2.png" alt="">
+                <div class="fe-text">
+                    <h5>Tutors</h5>
+                    <a class="black" href="https://docs.google.com/document/d/1IMXa8FL6ifOp4n_CnZTn4FM9_V5cIVwzlYVL2wl3aY8/edit?usp=sharing">If you would like to be a tutor, please click this link for more information.</a>
+                </div>
+            </div>           
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright ©2022 All Rights Reserved | Designed by Matthew Port Louis</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+
+        });
+    </script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyChEiEoYL4hK7EeMsBPxQSdL6cZ0ZdO-Ig",
+        authDomain: "excelphysics-acd0e.firebaseapp.com",
+        projectId: "excelphysics-acd0e",
+        storageBucket: "excelphysics-acd0e.appspot.com",
+        messagingSenderId: "792600178074",
+        appId: "1:792600178074:web:40034347964a253c15de23",
+        measurementId: "G-XB7VJM39T2"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatbile" content="IE=edge">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title>Excel Prep</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <nav>
+        <img src="images/physics.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a class= "active" href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+
+    <section id="home">
+        <h2>Learn Physics Without Stress with Excel Physics</h2>
+        <p>Hello everyone, welcome to Excel Prep! We are a tutoring service founded by 3 high school juniors looking to help students learn physics in a clear and simple way. Physics is commonly viewed as one of the most difficult courses offered in high school, but with a streamlined approach focused on conceptual understanding, we believe that we can prepare students for this course. Unlike professional tutors/tutoring companies, our company is up-to-date and experienced with AP curriculum concepts taught in schools, having taken physics this year. The concepts we focus on parallel emphasized concepts at school.
+        </p>
+        <div class="btn">
+            <a class="blue" href="about.html">Learn More</a>
+            <a class="blue" href="course.html">Visit Courses</a>
+        </div>
+    </section>
+
+    <!--features-->
+
+    <section id="features">
+        <h1>Features</h1>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Qualified Teachers</h3>
+                <p>Tutors have significant prior tutoring/teaching experience and high-standing physics achievement</p>
+            </div>
+            <div class="fea-box">
+                <i class="fas fa-file-certificate"></i>
+                <h3>Content</h3>
+                <p>Lifetime Access to our high quality notes and FRQs</p>
+            </div>
+            <div class="fea-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Dates of Sessions</h3>
+                <p>Starts beginning of June through mid-August</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profiles -->
+    <section id = "founders">
+        <h1>The Founders</h1>
+        <div class="expert-box">
+            <div class="profile">
+                <img src="images/pro1.webp" alt="">
+                <h6>Advitya Batta</h6>
+                <p>Co-Founder & Chief Exceutive Officer</p>
+                <div class="pro-links">
+                    <a href="https://www.linkedin.com/in/advitya-batta-9aa4a7207/" class="fab fa-linkedin-in"></a>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="images/pro2.webp" alt="">
+                <h6>Matthew Port Louis</h6>
+                <p>Co-Founder & Chief Technical Officer</p>
+                <div class="pro-links">
+                    <a href="https://www.linkedin.com/in/matthew-port-louis-5903aa212/" class="fab fa-linkedin-in"></a>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="images/pro3.webp" alt="">
+                <h6>Srihan Gullapalli</h6>
+                <p>Co-Founder & Chief Marketing Officer</p>
+                <div class="pro-links">
+                    <a href="https://www.linkedin.com/in/srihan-gullapalli-32067b21b" class="fab fa-linkedin-in"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright ©2022 All Rights Reserved | Designed by Matthew Port Louis</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+
+        });
+    </script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyChEiEoYL4hK7EeMsBPxQSdL6cZ0ZdO-Ig",
+        authDomain: "excelphysics-acd0e.firebaseapp.com",
+        projectId: "excelphysics-acd0e",
+        storageBucket: "excelphysics-acd0e.appspot.com",
+        messagingSenderId: "792600178074",
+        appId: "1:792600178074:web:40034347964a253c15de23",
+        measurementId: "G-XB7VJM39T2"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatbile" content="IE=edge">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title>Excel Prep</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <nav>
+        <img src="images/physics.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="course.html">Courses</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home -->
+
+    <section id="about-home">
+        <h2>Enhance Your Conceptual Understanding of Physics</h2>
+    </section>
+
+    <section id="course">
+        <h1>Our Physics Course</h1>
+        <p>We have created a curriculum (Regular Physics/AP Physics 1 and 2) that represent AP Physics/Test material with hand-picked conceptual and assessment questions! </p>
+        <div onclick = "window.location.href='contact.html';"class="course-box">
+            
+            <div class="courses">
+                <img src="images/physics_textbook.jpeg" alt="">
+                <div class="details">
+                    <span>Updated 1/31/21</span>
+                    <h6>AP Physics 1 and 2</h6>
+                    <a href="course-inner2.html">APP 1&2 Course Information</a>
+                </div>
+                <div class="cost">
+                    TBA
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright ©2022 All Rights Reserved | Designed by Matthew Port Louis</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+
+        });
+    </script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyChEiEoYL4hK7EeMsBPxQSdL6cZ0ZdO-Ig",
+        authDomain: "excelphysics-acd0e.firebaseapp.com",
+        projectId: "excelphysics-acd0e",
+        storageBucket: "excelphysics-acd0e.appspot.com",
+        messagingSenderId: "792600178074",
+        appId: "1:792600178074:web:40034347964a253c15de23",
+        measurementId: "G-XB7VJM39T2"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>

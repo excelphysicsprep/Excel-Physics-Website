@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatbile" content="IE=edge">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title>Excel Prep</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Navigation-->
+    <nav>
+        <img src="images/physics.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="course.html">Courses</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home timestamp 10:00 -->
+
+    <section id="about-home">
+        <h2>Enhance Your Conceptual Understanding of Physics with Excel Physics!</h2>
+    </section>
+
+    <section id="course-inner">
+        <div class="overview">
+            <img class="course-img" src="images/equations.jpeg" alt="">
+            <div class ="course-head">
+                <div class="c-name">
+                    <h2>AP Physics 1 and 2</h2>
+                    <p>All classes will be held online via Zoom.</p>
+                </div>
+                <span>TBA</span>
+            </div>
+            <h3>Instructor</h3>
+            <div class="tutor">
+                <img src="images/c4.jpg" alt="">
+                <div class="tutor-det">
+                    <h5>TBD</h5>
+                </div>
+            </div>
+            <hr>
+            <h3>Course Overview</h3>
+            <p>This course places emphasis upon the principal topics covered in introductory college physics courses. The course covers mechanics; heat, fluids, kinetic theory and thermodynamics; electricity and magnetism; waves and optics; and atomic and nuclear physics.</p>
+            <hr>
+            <h3>What you'll learn</h3>
+            <div class="learn">
+                <p><i class ="far fa-check-circle"></i>KINEMATICS</p>
+                <p><i class ="far fa-check-circle"></i>DYNAMICS</p>
+                <p><i class ="far fa-check-circle"></i>CIRCULAR MOTION</p>
+                <p><i class ="far fa-check-circle"></i>ENERGY</p>
+                <p><i class ="far fa-check-circle"></i>MOMENTUM</p>
+                <p><i class ="far fa-check-circle"></i>SIMPLE HARMONIC MOTION</p>
+                <p><i class ="far fa-check-circle"></i>TORQUE AND ROTATIONAL MOTION</p>
+                <p><i class ="far fa-check-circle"></i>FLUIDS</p>
+                <p><i class ="far fa-check-circle"></i>THERMODYNAMICS</p>
+                <p><i class ="far fa-check-circle"></i>ELECTROSTATICS</p>
+                <p><i class ="far fa-check-circle"></i>ELECTRIC CIRCUITS</p>
+                <p><i class ="far fa-check-circle"></i>MAGNETISM</p>
+                <p><i class ="far fa-check-circle"></i>OPTICS</p>
+                <p><i class ="far fa-check-circle"></i>MODERN PHYSICS</p>
+            </div>
+        </div>
+
+        <div class="enroll">
+            <h3>This course includes: </h3>
+            <p><i class="far fa-video"></i>108 hours worth of learning</p>
+            <p><i class="far fa-newspaper"></i>75 Custom FRQs</p>
+            <div class="enroll-btn">
+                <a class="blue" href="https://forms.gle/JSuhc9E3JfMgPNHe7">Enroll</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright ©2022 All Rights Reserved | Designed by Matthew Port Louis</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+
+        });
+    </script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyChEiEoYL4hK7EeMsBPxQSdL6cZ0ZdO-Ig",
+        authDomain: "excelphysics-acd0e.firebaseapp.com",
+        projectId: "excelphysics-acd0e",
+        storageBucket: "excelphysics-acd0e.appspot.com",
+        messagingSenderId: "792600178074",
+        appId: "1:792600178074:web:40034347964a253c15de23",
+        measurementId: "G-XB7VJM39T2"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>
